@@ -1,13 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
 @import "tailwindcss";
 
 :root {
   --bg: #191919;
   --surface: #393939;
   --text-primary: #f8fafb;
-  --text-sceondary: #eef0f2;
+  --text-secondary: #c5c8ca;
   --border-color: #989898;
+  --primary: #950606;
+  --primary-shade: #4a0404;
 }
 
 body {
   background: var(--bg);
+  font-family: "Rubik", sans-serif;
 }
