@@ -7,8 +7,8 @@ function Contact() {
 
   return (
     <section className="flex bg-(--surface) gap-4 px-[clamp(1rem,15dvw,15%)] p-32 text-(--text-primary)">
-        <div className="flex-1 flex flex-col gap-4 py-8">
-          <h2 className="text-3xl">About Me</h2>
+        <div className="flex-1 flex flex-col gap-4">
+          <h2 className="text-3xl">Contact</h2>
 
           <p className="flex gap-2 items-center"> 
             <EnvelopeSimpleIcon size={20} weight="bold"/> 

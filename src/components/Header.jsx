@@ -1,24 +1,26 @@
 import { Code } from "@phosphor-icons/react";
-import { Link } from "react-router-dom";
 
-function Header() {
+function Header({ redirectTo }) {
 
   return (
-    <header className="flex justify-between items-center px-[clamp(2rem,15dvw,15%)] h-16 text-(--text-primary)">
+    <header className="fixed flex bg-(--bg) justify-between items-center px-[clamp(2rem,15dvw,15%)] h-16  w-full text-(--text-primary) ">
       <div>
         <Code size={28} color="var(--text-primary)"/>
       </div>
 
       <nav className="flex border border-(--border-color) rounded overflow-hidden">
-        <Link to="" className="px-4 py-1 hover:bg-(--surface)">
+        <a onClick={redirectTo.hero} className="px-4 py-1 hover:bg-(--surface) cursor-pointer">
+          José Mathias
+        </a>
+        <a onClick={redirectTo.aboutMe} className="px-4 py-1 hover:bg-(--surface) cursor-pointer">
           About Me
-        </Link>
-        <Link to="" className="px-4 py-1 hover:bg-(--surface)">
+        </a>
+        <a onClick={redirectTo.projects} className="px-4 py-1 hover:bg-(--surface) cursor-pointer">
           Projects
-        </Link>
-        <Link to="" className="px-4 py-1 hover:bg-(--surface)">
+        </a>
+        <a onClick={redirectTo.contact} className="px-4 py-1 hover:bg-(--surface) cursor-pointer">
           Contact
-        </Link>
+        </a>
       </nav>
     </header>
   )
